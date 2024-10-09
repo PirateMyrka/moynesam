@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="img/Group 1.png" alt="Логотип"></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="lc.html">Заявки</a></li>
+                <li><a href="index.html">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+        <h1>Создание заявки</h1>
+        <form id="requestForm">
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="contactPhone">Контактный телефон:</label>
+            <input type="tel" id="contactPhone" name="contactPhone">
+
+            <label for="serviceType">Выберите вид услуги:</label>
+            <select id="serviceType" name="serviceType" required>
+                <option value="generalCleaning">Общий клининг</option>
+                <option value="deepCleaning">Генеральная уборка</option>
+                <option value="postConstructionCleaning">Послестроительная уборка</option>
+                <option value="carpetCleaning">Химчистка ковров и мебели</option>
+                <option value="other">Иная услуга</option>
+            </select>
+
+            <div id="otherServiceDiv" style="display:none;">
+                <label for="otherService">Описание услуги:</label>
+                <textarea id="otherService" name="otherService"></textarea>
+            </div>
+
+            <label for="date">Желаемая дата и время:</label>
+            <input type="datetime-local" id="date" name="date">
+
+            <label for="paymentType">Тип оплаты:</label>
+            <select id="paymentType" name="paymentType">
+
+                 <option value="cash">Наличные</option>
+                <option value="card">Картой</option>
+            </select>
+
+            <button type="submit"><a href="lc.html">Создать заявку</a></button>
+        </form>
+</div>
+
+</body>
+</html>
